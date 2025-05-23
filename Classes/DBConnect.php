@@ -28,7 +28,7 @@ class DBConnect extends PDO
         }
     }
 
-    public function getPDO()
+    public function getPDO(): PDO
     {
         return $this->pdo;
     }

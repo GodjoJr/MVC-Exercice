@@ -24,7 +24,7 @@ class Command
             $manager = new ContactManager();
             $contacts = $manager->findAll();
             foreach ($contacts as $contact) {
-                echo $contact . "\n";
+                echo (string) $contact . "\n";
             }
         } catch (Exception $e) {
             echo $e->getMessage();
